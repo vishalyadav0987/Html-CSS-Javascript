@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 3px;
+
+        }
+
+        #reset {
+            background: red;
+            width: 68px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        #submit {
+            background: blue;
+            width: 68px;
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+    <script>
+        function validateSubmit() {
+            var fill = document.Form.firstname.value;
+            var fil = document.Form.lastname.value;
+            var fi = document.Form.email.value;
+            var f = document.Form.phonenumber.value;
+
+            if (fill == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            if (fil == "") {
+                alert("Lname must be filled out");
+                return false;
+            }
+            if (fi == "") {
+                alert("email id must be filled out");
+                return false;
+            }
+            if (f == "") {
+                alert("phonenumber must be filled out");
+                return false;
+            }
+            if (f.length!=10){
+                alert("Your Number is not Correct")
+                return false;
+            }
+            // if(f!=Number.parseInt){
+            //     alert("Your Number isn't correct way")
+            //     return false; 
+            // }
+            alert("Your form is sucessfully submitted")
+
+        }
+        function validateEmail() {
+            var emailTextBox = document.getElementById("txtEmail");
+            var email = emailTextBox.value;
+            var emailRegEx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (emailRegEx.test(email)) {
+                emailTextBox.style.color = "blue"
+                emailTextBox.style.textDecoration = "none"
+            }
+            else {
+                emailTextBox.style.textDecoration = "underline"
+                emailTextBox.style.textDecorationColor = "red"
+
+
+            }
+
+        }
+
+
+        // function validatePhoneNumber() {
+        //     var pass = document.Form.phonenumber.value;
+        //     if (isNaN(pass)) {
+        //         document.Form.phonenumber.value = "";
+        //     }
+
+        // }
+        function validateReset() {
+            document.Form.firstname.value = "";
+            document.Form.lastname.value = "";
+            document.Form.email.value = "";
+            document.Form.phonenumber.value = "";
+            alert("your form is sucessfully is Reset")
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <form name="Form">
+        <label for="firstname">First Name: </label><br>
+        <input type="text" name="firstname" placeholder="Enter your firstname"><br>
+        <label for="lastname">Last Name: </label><br>
+        <input type="text" name="lastname" placeholder="Enter your lastname"><br>
+        <label for="email">Email: </label><br>
+        <input type="text" id="txtEmail" name="email" placeholder="Enter your email" onkeyup="validateEmail()"><br>
+        <label for="text">Phone Number: </label><br>
+        <input type="text" name="phonenumber" placeholder="Phone number" onclick="validatePhoneNumber()"><br>
+        <input type="submit" value="submit" id="submit" onclick="return validateSubmit()">
+        <input type="button" value="Reset" id="reset" onclick="validateReset()">
+    </form>
+
+</body>
+
+</html>
