@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(205, 244, 231);
+        }
+
+        select {
+            margin: 10px 0px 0px 0px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: blue;
+
+        }
+        fieldset input label{
+            margin: 5px 5px 5px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <center>
+            <h1>Student Details</h1>
+        </center>
+        <hr>
+        <label for="Search">Search : </label>
+        <input type="search" name="search" id="search" pattern="[A-za-z]{6}">
+        <input type="submit" name="submit"><br>
+        <!-- the <select> element defines a drop down list -->
+        <label for="cars"> choose a grade : </label>
+        <select name="cars" id="cars">
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select><br>
+
+        <!-- the <textera> elements defines a multiple line input field (a text areea:) -->
+        <textarea name="message" rows="10" cols="30" style="margin: 10px;">
+
+        </textarea>
+        <fieldset>
+            <legend>
+                Student information :
+            </legend>
+            <label for="first name">First name : </label>
+            <input type="text" id="first name" name="first name" ><br>
+            <label for="last mane">last name : </label>
+            <input type="text" id="last name" name="last name" style="margin: 6px;" ><br>
+              <input class=" button" type="submit" value="dabba de">
+        </fieldset>
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>
+
+<!-- disable
+max
+maxlength -->
+
+<!-- name=id=for -->
