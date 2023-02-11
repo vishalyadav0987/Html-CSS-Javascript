@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+         h1{
+            border: 4px solid blue;
+            border-style: double;
+            text-transform: uppercase;
+            color: rgb(98, 98, 177);
+            text-decoration:dotted;
+        } 
+        .item1 {
+            grid-area: header;
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+        }
+
+        .item2 {
+            grid-area: menu;
+          /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;  */
+        } 
+
+        .item3 {
+            grid-area: main; 
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;  */
+         } 
+
+        .item4 {
+            grid-area: right; 
+             /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;  */
+        } 
+
+        .item5 {
+            grid-area: footer; 
+             /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;   */
+         } 
+
+         .grid_content {
+            display: grid; 
+            grid-template-areas: 'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer'; 
+             gap: 10px; 
+             background-color: rgb(49, 49, 181);
+            /* padding: 10px;
+            row-gap: 5px; */
+            /* column-gap: 5px; */
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows:80px 80px ;
+            /* justify-content: space-around; */
+
+        }  
+
+        .grid_content>div {
+            background-color: rgb(133, 224, 224);
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 30px;
+            border: 5px solid black;
+            border-radius: 32px;
+            font-size: 30px;
+            color: #241edf
+        } 
+        .grid_content1{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: #241edf;
+            padding: 10px;
+            grid-template-rows:80px 80px ;
+            /* justify-content: end; */
+
+        } 
+        .grid_content1>div {
+            background-color: rgb(133, 224, 224);
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 30px;
+            border: 5px solid black;
+            border-radius: 32px;
+            font-size: 30px;
+            color: #241edf
+        }
+        .grid_content2{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            background-color: #241edf;
+            padding: 10px;
+            grid-template-rows:80px 200px ;
+            /* justify-content: start; */
+
+        } 
+        .grid_content2>div {
+            background-color: rgb(133, 224, 224);
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 30px;
+            border: 5px solid black;
+            border-radius: 32px;
+            font-size: 30px;
+            color: #241edf
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1>Grid property</h1></center>
+    <div class="grid_content">
+        <div class="item1">
+            Header
+        </div>
+        <div class="item2">
+            Menu
+        </div>
+        <div class="item3">
+            Main
+        </div>
+        <div class="item4">
+            Right
+        </div>
+        <div class="item5">
+            footer
+        </div>
+
+    </div> -->
+    <div class="grid_content">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item3">3</div>
+        <div class="grid-item4">4</div>
+        <div class="grid-item5">5</div>
+        <div class="grid-item6">6</div>
+        <div class="grid-item7">7</div>
+        <div class="grid-item8">8</div>
+        <div class="grid-item9">9</div>
+        <div class="grid-item10">10</div>
+        <div class="grid-item11">11</div>
+        <div class="grid-item12">12</div>
+        
+    </div>
+    <div class="grid_content1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        
+    </div>
+    <div class="grid_content2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        
+    </div>
+
+</body>
+
+</html>
