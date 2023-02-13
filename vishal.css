@@ -1,0 +1,155 @@
+.class {
+    color: red;
+    font-size: 20px;
+}
+
+#roll {
+    color: blueviolet;
+    font-size: 20px;
+}
+
+h1 {
+    color: rgb(27, 154, 48);
+}
+
+body {
+    background-color: aqua;
+}
+
+.hero {
+    color: red;
+    text-align: center;
+    text-decoration: underline dotted;
+    text-transform: capitalize;
+    text-indent: 20px;
+    letter-spacing: 4px;
+    font-size: 20px;
+    text-shadow: 5px 1px;
+}
+
+h2 {
+    direction: rtl;
+    text-align: center;
+    text-shadow: 5px 2px;
+    word-spacing: 15px;
+}
+
+.p1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.p2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p3 {
+    font-family: "Lucida Console", "Courier New", "monospace";
+}
+
+center {
+    font-size: 30px;
+    font-weight: 100px;
+}
+
+center {
+    border: 10px;
+    border-style: double;
+    border-color: blueviolet;
+}
+
+.p3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid red;
+    width: 1270pxpx;
+    height: 100px;
+}
+
+.p3 {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.box {
+    border: 20px solid rgb(9, 206, 236);
+    width: 1200px;
+    height: 300px;
+    margin: 10px;
+    padding: 50px;
+    background-color: cadetblue;
+}
+
+span {
+    font-size: 30px;
+}
+
+bod {
+    background-image: url("/site photo/apple-store.jpg");
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-repeat: fixed;
+}
+
+thead {
+
+    background-color: blue;
+    color: aliceblue;
+    font-size: 46px;
+}
+
+tbody {
+
+    font-size: 46px;
+    font-family: cursive;
+    background-color: crimson;
+    color: aliceblue;
+}
+
+table {
+    margin: 0pxpx 1px 0px 0px;
+    /* border-collapse: separate; */
+    width: 100%;
+    height: 700px;
+    border-spacing: 5px;
+
+}
+
+th,
+td {
+    /* border-style: double; */
+    border-style: outset;
+    border-color: blue 4px;
+    /* border-style:inset; */
+    /* border-style:dashed; */
+
+}
+
+td {
+    width: 50px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 4px solid magenta;
+
+}
+
+th,
+td {
+    text-align: center;
+    border-bottom: 10px solid black;
+    margin-top: 2px;
+}
+
+tr:hover {
+    background-color: rgb(88, 91, 94);
+    cursor: pointer;
+}
