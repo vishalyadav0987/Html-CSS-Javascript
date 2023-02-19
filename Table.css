@@ -1,0 +1,27 @@
+table {
+    font-size: 32px;
+    margin: 5px;
+}
+
+thead {
+    background-color: rgba(240, 240, 19, 0.916);
+}
+
+.vi {
+    background-color: red;
+}
+
+th {
+    height: 100px;
+    width: 276px;
+    border: 15px solid aquamarine;
+}
+
+td {
+    height: 60px;
+    border: 15px solid aquamarine;
+}
+
+tbody {
+    background-color: rgb(7, 174, 7);
+}
