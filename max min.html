@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         let a = parseInt(prompt("Enter 1st number"))
+        let b = parseInt(prompt("Enter 2st number"))
+        let c = parseInt(prompt("Enter 3st number"))
+        let arr = []
+        arr.push(a,b,c);
+        function abc(){
+            let arr = []
+        arr.push(a,b,c);
+        let max = Math.max(...arr);
+        let min = Math.min(...arr);
+        document.querySelector('.Max_Bold').innerHTML = max;
+            document.querySelector('.Min_Bold').innerHTML = min;
+        }
+        // document.write(max,"")
+        // document.write(min)
+
+    </script>
+</head>
+<body>
+    <p class="Max_Bold">Maximum element is:</p>
+    <p class="Min_Bold">Minimum element is:</p>
+    <input type="button" onclick="abc()">
+</body>
+</html>
