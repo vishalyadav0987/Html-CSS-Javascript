@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateSubmit(){
+            alert("your form is submmited, it is uesd insited form tag to give submit and reset the given  form")
+        }
+        function validateReset(){
+            alert("your form is rest")
+        }
+        // function abc(){
+        //     alert("sucesfully")
+        // }
+    </script>
+</head>
+<body>
+    <div class="container" style="border: 4px solid black; width: 500px;">
+        <form name="Form" style=" margin: 10px 0px 10px 50px;" onsubmit="validateSubmit()" onreset="validateRest()">
+            <label for="firstname">Name: </label>
+            <input type="text" name="firstname" placeholder="Enter your firstname" style="margin: 21px 0px 0px 0px;"><br>
+            <label for="lastname">Adress :</label>
+            <input type="text" name="lastname" placeholder="Enter your lastname" style="margin: 15px 0px 0px 0px;"><br>
+            <label for="email">City : </label>
+            <input type="text" id="txtEmail" name="email" placeholder="Enter your email" onkeyup="validateEmail()" style="margin: 15px 0px 0px 0px;"><br>
+            <label for="text">State : </label>
+            <input type="text" name="phonenumber" placeholder="Phone number"  style="margin: 15px 0px 0px 0px;"><br>
+            <label for="text">Zip : </label>
+            <input type="text" name="phonenumber" placeholder="Phone number" style="margin: 15px 0px 0px 0px;"><br>
+            <label for="email">Magazines : </label>
+            <select name="newspaper" id="newspaper" style="margin: 15px 0px 0px 0px;">
+            <option value="Indian Times">Indian Times</option>
+            <option value="Indian Times">Indian Times</option>
+            <option value="Indian Times">Indian Times</option>
+            <option value="Indian Times">Indian Times</option>
+            <option value="Indian Times">Indian Times</option>
+            <option value="Indian Times">Indian Times</option>
+            </select><br>
+            <label for="email">Subscriptions : </label>
+            <input type="radio" id="name" name="name" required> 1year <input type="radio" id="name" name="name" required> 2 year <br>
+            <label for="email" style="margin: 15px 0px 0px 0px;">Aditional comment: </label><br>
+            <textarea name="comment" id="comment" cols="50" rows="8" style="margin: 15px 0px 0px 0px;"></textarea><br>
+            <input type="submit" value="submit" id="submit" style="margin: 15px 0px 0px 0px;">
+            <input type="button" value="Reset" id="reset"  style="margin: 15px 0px 0px 0px;">
+        </form>
+    </div>
+</body>
+</html>
