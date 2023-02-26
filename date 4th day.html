@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <h2 style="border:8px solid rgb(206, 206, 245);color: blue; border-style:double;">Fourth day of JAVASRIPT</h2>
+    </center>
+    <p id="abc"></p>
+    <script>
+
+        var date = new Date();
+        var value = date.getDay();
+        var day;
+        switch (value) {//switch(newDate().getDay())
+            case 0:
+                day = "sunday";
+                break;
+            case 1:
+                day = "monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "wednesday";
+                break;
+            case 4:
+                day = "thrusday";
+                break;
+            case 5:
+                day = "friday";
+                break;
+            case 6:
+                day = "saturday";
+                break;
+
+        }
+        document.getElementById('abc').innerHTML = day; 
+    </script>
+    <center>
+        <h2 style="border:8px solid rgb(206, 206, 245);color: blue; border-style:double;">5th day of JAVASRIPT</h2>
+    </center>
+    <!-- <p id="nums"></p> -->
+    <p id="zxc"></p>
+    <!-- <p id="after_body"></p> -->
+
+    <script>
+        // var numbers =0;
+        // for(var i = 1; i<=5;i++){
+        //     numbers=numbers+i;
+        // }
+        // document.getElementById('nums').innerHTML=numbers;
+        var number = " ";
+        while (x <= 10) {
+            number = number + x;
+
+        }
+        document.getElementById('zxc').innerHTML = number;
+
+    </script>
+
+    <!-- <p class="sum"></p>
+<script>
+            var number =" ";
+            for(var j = 1; j<=5;j++){
+                number=number+j;
+            }
+            document.getElementById('sum').innerHTML=number;
+</script> -->
+</body>
+
+</html>
