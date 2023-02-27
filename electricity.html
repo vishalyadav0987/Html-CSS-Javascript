@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function validateSubmit() {
+            var x = document.getElementById('box12').value;
+            var y = document.getElementById('box13').value;
+            var z = x * y;
+            document.getElementById('Rateunit').innerHTML = z;
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" style="margin-top: 10px;">
+
+        <label for="firstname">First Name: </label><br>
+        <input type="text" name="firstname" placeholder="Enter your firstname" required><br>
+        <label for="lastname">Last Name: </label><br>
+        <input type="text" name="lastname" placeholder="Enter your lastname" required><br>
+        <label for="month">month :</label><br>
+        <input type="month"><br>
+        <label for="unit">Unit Consumption :</label><br>
+        <input type="text" id="box12" placeholder="Unit Consumption " required><br>
+        <label for="rate">Rate of Unit :</label><br>
+        <input type="text" id="box13" placeholder="Rate of Unit" required>
+        <p style="border: 2px solid black; width: 50px; height: 20px;" id="Rateunit"></p>
+        <input type="submit" value="submit" id="submit" onclick=" validateSubmit()">
+    </div>
+</body>
+
+</html>
